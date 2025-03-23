@@ -6,7 +6,7 @@ EXPOSE 8080
 # Use the SDK image to build the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["YourProjectName.csproj", "./"]
+COPY ["OnBoarding.csproj", "./"]
 RUN dotnet restore "./OnBoarding.csproj"
 
 COPY . .
